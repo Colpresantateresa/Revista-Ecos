@@ -16,8 +16,8 @@ export default function GridArticulos() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      <h2 className="text-2xl font-bold mb-8 text-center">
+    <div className="max-w-5xl mx-auto px-4 py-12 text-slate-800 dark:text-slate-200">
+      <h2 className="text-2xl font-bold mb-8 text-center text-slate-900 dark:text-slate-100">
         Entretenimiento
       </h2>
 
@@ -26,7 +26,7 @@ export default function GridArticulos() {
           <Link
             key={i}
             to={art.link}
-            className="block bg-white shadow hover:shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+            className="block bg-white dark:bg-slate-800 shadow hover:shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105"
           >
             <img
               src={art.img}
@@ -34,10 +34,10 @@ export default function GridArticulos() {
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <h3 className="font-semibold text-lg leading-snug">
+              <h3 className="font-semibold text-lg leading-snug text-slate-800 dark:text-slate-100">
                 {art.titulo}
               </h3>
-              <p className="text-blue-600 text-sm mt-2">Leer artículo →</p>
+              <p className="text-blue-600 dark:text-blue-400 text-sm mt-2">Leer artículo →</p>
             </div>
           </Link>
         ))}

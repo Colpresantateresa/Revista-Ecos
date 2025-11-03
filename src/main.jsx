@@ -1,14 +1,37 @@
+// import React from 'react'
+// import { createRoot } from 'react-dom/client'
+// import { BrowserRouter } from 'react-router-dom'
+// import App from './App'
+// import './index.css'
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// |
+//   AOS.init();
+
+
+// createRoot(document.getElementById('root')).render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>
+// )
+
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
-  AOS.init();
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+import { ThemeProvider } from "./context/ThemeContext";  // ✅ IMPORTANTE
+
+AOS.init()
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+    <ThemeProvider>      {/* ✅ ENVUELVE LA APP */}
+      <App />
+    </ThemeProvider>
   </BrowserRouter>
 )
-

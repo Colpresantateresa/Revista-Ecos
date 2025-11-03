@@ -18,8 +18,8 @@ export default function ArticuloCronica() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-2xl font-bold mb-6 text-center">
+    <div className="max-w-3xl mx-auto px-4 py-10 text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 transition-colors duration-300">
+      <h1 className="text-2xl font-bold mb-6 text-center text-slate-900 dark:text-slate-100">
         CRÓNICA: LA MEJOR CIUDAD QUE HE VISITADO
       </h1>
 
@@ -27,13 +27,13 @@ export default function ArticuloCronica() {
         <img
           src="/images/Cartagena2.jpg"
           alt="Cartagena"
-          className="md:float-right md:ml-6 md:mb-4 w-full md:w-1/2 rounded-lg shadow" data-aos="fade-down"
+          className="md:float-right md:ml-6 md:mb-4 w-full md:w-1/2 rounded-lg shadow transition-transform duration-300" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500"
         />
 
         {parrafos.map((p, i) => (
-          <p key={i} className="text-justify leading-relaxed mb-4">
+          <p key={i} className="text-justify leading-relaxed mb-4 text-slate-700 dark:text-slate-300">
             {p}
           </p>
         ))}

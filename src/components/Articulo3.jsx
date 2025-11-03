@@ -135,14 +135,14 @@ export default function ArticuloRevistaPreescolar() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-center mb-10 text-gray-800   ">
+    <div className="max-w-3xl mx-auto px-4 py-10 text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 transition-colors duration-300">
+      <h1 className="text-3xl font-bold text-center mb-10 text-gray-800 text-2xl font-bold mb-6 text-center text-slate-900 dark:text-slate-100 ">
         NUESTRAS PEQUEÑAS HISTORIAS
       </h1>
 
       {secciones.map((sec, index) => (
         <div key={index} className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">
+          <h2 className="text-2xl font-semibold mb-6 text-center text-slate-900 dark:text-slate-100">
             {sec.titulo}
           </h2>
           <img
@@ -153,7 +153,7 @@ export default function ArticuloRevistaPreescolar() {
             data-aos-easing="ease-in-sine"
           />
           {sec.parrafos.map((p, i) => (
-            <p key={i} className="text-justify leading-relaxed mb-4 text-gray-700" >
+            <p key={i} className="text-justify leading-relaxed mb-4 text-slate-700 dark:text-slate-300" >
               {p}
             </p>
           ))}
