@@ -5,7 +5,8 @@ import NoticiasRecientes from "../components/Actulidad";
 import ImageSlider from "../components/ImageSlider"; 
 import MenuArticulo from "../components/MenuArticulo";
 import MenuArticuloE from "../components/MenuArticuloE";
-
+import OrgulloPresentacion from "../components/EstudiatesDest";
+import ArticuloMindfulness from "../components/MInd";
 
 function Homepage() {
   return (
@@ -17,10 +18,12 @@ function Homepage() {
 
       {/* Sección de noticias */}
       <NoticiasRecientes />
+      <OrgulloPresentacion />
 
       {/* Sección editorial */}
       <Editorial />
       <MenuArticulo />
+      <ArticuloMindfulness />
       <MenuArticuloE />
 
     </Layout>

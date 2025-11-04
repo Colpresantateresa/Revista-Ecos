@@ -34,7 +34,7 @@ function Navbar() {
         {/* LOGO IZQUIERDA */}
         <Link to="/">
           <img
-            src="/Ecos2.png"
+            src="/images/LogoEco.png"
             alt="Logo Revista Ecos"
             className="w-25 h-16 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90"
           />
