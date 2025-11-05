@@ -1,11 +1,15 @@
 import React from "react";
 import Layout from "../layouts/Layout";
-import Enconstruccion from "../components/Enconstruccion";
+import GaleriaSatmun from "../components/GaleriaSatmun";
+import ArticuloSatmunDescripcion from "../components/Satmun1";
+import BienvenidaSatmun from "../components/SatmunBien";
 
 export default function Satmun() {
   return (
     <Layout>
-      <Enconstruccion />
+      <BienvenidaSatmun />
+      <ArticuloSatmunDescripcion />
+      <GaleriaSatmun />
     </Layout>
   );
 }
