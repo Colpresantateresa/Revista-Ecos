@@ -1,26 +1,32 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const ImageSlider = () => {
+export default function ImageSlider() {
+  const navigate = useNavigate();
+
   const slides = [
     {
-      src: "/images/Satmun.jpg",
-      title: "Delegación SATMUN 2024",
-      description: "Los estudiantes del colegio en la ceremonia inaugural del evento.",
+      src: "/images/Exploradores.jpg",
+      title: "Exploradores Infantiles",
+      description: "Descubre las aventuras y proyectos de nuestros pequeños exploradores.",
+      route: "/infantil",
     },
     {
-      src: "/images/Prom001.jpg",
-      title: "Recuerdos de la promoción 2024",
-      description: "Un vistazo a los compañeros que se fueron el año pasado.",
+      src: "/images/GalSat25/st24.JPG",
+      title: "SATMUN 2025",
+      description: "Visita nuestra Seccion y conoce que es Satmun.",
+      route: "/satmun",
     },
     {
-      src: "/images/perso.png",
-      title: "Posesión del personero 2025",
-      description: "Presentaciones de personera electa y su equipo.",
+      src: "/images/Tierra1.jpeg",
+      title: "Día de la Tierra: Un compromiso por el futuro del planeta",
+      description: "Lee el artículo especial de la sección de literatura y ciencia.",
+      route: "/ciencia-literatura/dia-tierra",
     },
   ];
 
@@ -32,26 +38,37 @@ const ImageSlider = () => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 4500 }}
         loop={true}
         className="rounded-2xl"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative">
+            <div
+              onClick={() => navigate(slide.route)}
+              className="relative group cursor-pointer"
+            >
               <img
                 src={slide.src}
                 alt={slide.title}
-                className="
-                  w-full 
-                  h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px]
-                  object-cover
-                  transition-all duration-500
-                "
+                className="w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[450px] object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-3 sm:p-4">
-                <h3 className="text-lg sm:text-xl font-semibold">{slide.title}</h3>
-                <p className="text-xs sm:text-sm">{slide.description}</p>
+
+              {/* Fondo animado con descripción */}
+              <div
+                className="absolute inset-0 flex flex-col justify-end 
+                           bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                           dark:from-black/80 dark:via-black/50 transition-all duration-500 
+                           group-hover:from-black/80 group-hover:via-black/60"
+              >
+                <div className="p-4 sm:p-6 text-white transition-transform duration-500 group-hover:translate-y-[-3px]">
+                  <h3 className="text-xl sm:text-2xl font-bold drop-shadow-md group-hover:text-cyan-300">
+                    {slide.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-200">
+                    {slide.description}
+                  </p>
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -59,9 +76,4 @@ const ImageSlider = () => {
       </Swiper>
     </div>
   );
-};
-
-export default ImageSlider;
-
-
-
+}
