@@ -8,13 +8,26 @@ export default function Editorial() {
   }, []);
 
   return (
-    <section className="pt-20 pb-16 font-sans px-6 md:px-12 max-w-5xl mx-auto text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 transition-colors duration-500">
-      {/* Título principal sin efectos */}
-      <h1 className="text-4xl md:text-5xl font-bold mb-8 font-serif text-blue-900 dark:text-blue-400 text-left">
-        Editorial
-      </h1>
+    <section className="pt-24 pb-20 font-sans px-6 md:px-12 max-w-5xl mx-auto text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 transition-colors duration-500">
 
-      {/* Imagen tipo revista con animación y pie de foto */}
+      {/* Encabezado tipo revista */}
+      <div className="mb-10" data-aos="fade-up">
+        <span className="uppercase tracking-widest text-sm text-blue-700 dark:text-blue-400 font-semibold">
+          Edición N°6 · Año Escolar 2025
+        </span>
+
+        <h1 className="text-4xl md:text-6xl font-serif font-bold mt-2 leading-tight text-slate-900 dark:text-white">
+          Ecos Presentación 2025
+        </h1>
+
+        <h2 className="text-lg md:text-xl mt-3 text-slate-600 dark:text-slate-400 italic">
+          Una revista que inspira esperanza, creatividad y transformación
+        </h2>
+
+        <div className="w-24 h-1 bg-blue-700 dark:bg-blue-400 mt-6"></div>
+      </div>
+
+      {/* Imagen tipo revista */}
       <div
         className="float-right md:w-64 w-52 ml-6 mb-4 text-center"
         data-aos="zoom-in"
@@ -22,67 +35,62 @@ export default function Editorial() {
         <img
           src="/images/HnaO.jpg"
           alt="Hna. Omaira del C. Sánchez Ardila - Rectora"
-          className="rounded-xl shadow-md w-full h-auto object-cover"
+          className="rounded-xl shadow-lg w-full h-auto object-cover"
         />
-        <p className="mt-2 text-sm md:text-base font-semibold text-slate-800 dark:text-slate-200">
+        <p className="mt-3 text-sm md:text-base font-semibold">
           Hna. Omaira del C. Sánchez Ardila
           <br />
-          <span className="font-normal">Rectora</span>
-        </p>
-      </div>
-
-      {/* Contenido principal */}
-      <div className="text-justify leading-relaxed space-y-4">
-        <p className="font-semibold text-slate-700 dark:text-slate-300 italic">
-          “Quienes se empeñan en la defensa de la dignidad de las personas, pueden encontrar en la fe cristiana los argumentos más profundos para ese compromiso”.  
-          <span className="block text-right text-sm mt-1">— N° 5 LS’</span>
-        </p>
-
-        <p>
-          ¡Qué bien… qué bueno… qué agradable…! es poder llegar a usted, querido lector de nuestra
-          <strong> Revista Institucional</strong>, con una nueva edición para este año escolar 2024,
-          en el que muy seguramente ya está enterado del propósito que nos mantiene atentos para
-          facilitarnos la vida en un trabajo conjunto desde el aporte a la construcción de la vida,
-          “propiciando ambientes sanos y saludables que nos y te transformen… haciendo la diferencia”.
-        </p>
-
-        <p>
-          Nuestra revista digital (sitio web), en su edición N°5 <strong>“ECOS PRESENTACIÓN”</strong>,
-          llega en este nuevo año escolar con la fuerza y la novedad que nos impulsa a continuar escribiendo
-          la parte de la historia que nos corresponde, como integrante de este proyecto al ser uno de los
-          personajes que la hacen posible.
-        </p>
-
-        <p>
-          Importante mantener nuestra vida inmersa en el mágico mundo de la escritura y la lectura,
-          como soporte que ayuda de manera inimaginable a ampliar el horizonte de la mente,
-          la profundidad del corazón y navegar en el infinito universo de las letras que traspasan fronteras.
-          Recuerda: lo que se escribe existe, lo que lees recrea, y la lectura es evidencia de mantener
-          vigente la memoria en el tiempo, con el tiempo y a través del tiempo.
-        </p>
-
-        <p>
-          Cordialmente, te invitamos a valorar y disfrutar con gusto e interés de nuestra
-          Revista <strong>“ECOS PRESENTACIÓN”</strong>, al tiempo que deseamos que puedas propiciar
-          momentos para pensar, reflexionar y apoyar con críticas constructivas que aporten al proceso
-          de cambio que durante estos últimos tiempos nos apremia…
-        </p>
-
-        <p className="font-semibold mt-6">
-          ¡Bendiciones!  
-          <br />
-          <span className="italic">
-            Con Nuestra Señora de La Presentación, cordial abrazo.
+          <span className="font-normal text-slate-600 dark:text-slate-400">
+            Rectora
           </span>
         </p>
       </div>
 
-      {/* Limpieza del float */}
+      {/* Contenido */}
+      <div className="text-justify leading-relaxed space-y-6">
+
+        {/* Cita estilo revista */}
+        <blockquote className="border-l-4 border-blue-700 dark:border-blue-400 pl-6 italic text-lg text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 p-4 rounded-r-lg shadow-sm">
+          “La esperanza siempre tiene rostro humano, acciones concretas para construir a través de la esperanza, un mundo mejor”.
+          <span className="block text-right text-sm mt-2 font-semibold">
+            — Papa Francisco
+          </span>
+        </blockquote>
+
+        <p>
+          En ambiente Jubilar, como peregrinos de la esperanza, continuamos el camino haciéndole eco en expresiones de alegría, gozo y disponibilidad… que nos incitan a pensar y sentir necesidad de Dios, a tener deseos de ser cada día el mejor reflejo de nosotros mismos y realizar con compromiso la misión que se nos ha confiado.
+        </p>
+
+        <p>
+          Con el entusiasmo que nos caracteriza, queremos aprovechar este momento para llegar a usted, querido lector de nuestra <strong>Revista Institucional</strong>, que en este año escolar 2025 tiene como propósito destacar a los pequeños escritores de la comunidad educativa, resaltando sus habilidades en la producción textual.
+        </p>
+
+        <p>
+          Nuestra revista digital, en su edición N°6 <strong>“ECOS PRESENTACIÓN”</strong>, busca mantenernos actualizados frente a los avances comunicativos actuales. Este año incorporamos la sección especial <span className="bg-blue-700 text-white px-2 py-1 rounded-md text-sm font-semibold">Zapping</span>, donde se valorarán las producciones orales y la creatividad audiovisual, fomentando la lectura infantil y juvenil a través de mensajes motivadores.
+        </p>
+
+        <p>
+          Continuemos escribiendo con palabras sabias la parte de la historia que nos corresponde. Quien lee y escribe hace posible lo imposible, crea mundos y personajes inimaginables y trasciende fronteras a través del poder transformador de las letras.
+        </p>
+
+        <p>
+          La sección infantil de la revista es un homenaje a la creatividad, el ingenio y la sensibilidad de nuestros estudiantes. Sus voces cobran vida mediante cuentos, poemas y reflexiones que evidencian imaginación, capacidad de expresión y amor por el aprendizaje.
+        </p>
+
+        <p>
+          Si eres parte de nuestra familia Presentación, estás llamado a asumir el reto, a entrar en este maravilloso mundo y sorprendernos con tu talento, para que juntos hagamos la diferencia y construyamos una nueva mentalidad de vida.
+        </p>
+
+        {/* Separador elegante */}
+        <div className="border-t border-slate-300 dark:border-slate-700 pt-6 mt-6">
+          <p className="font-semibold text-lg text-center">
+            Con esperanza y compromiso, avancemos juntos hacia un mundo mejor.
+          </p>
+        </div>
+
+      </div>
+
       <div className="clear-both"></div>
     </section>
   );
 }
-
-
-
-
