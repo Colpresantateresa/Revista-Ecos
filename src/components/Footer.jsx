@@ -16,38 +16,50 @@ function Footer() {
                    transition-transform duration-300 hover:scale-110 hover:-translate-y-1"
       />
 
-      <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-3 items-center">
+      <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 items-center gap-8">
 
-        {/* IZQUIERDA — Redes + contacto */}
-        <div className="flex flex-col items-start gap-2">
-          <p className="text-sm font-semibold dark:text-slate-100">Síguenos</p>
+        {/* IZQUIERDA — Redes + contacto con Fondo */}
+        <div 
+          className="relative flex flex-col items-start gap-2 p-6 rounded-2xl overflow-hidden bg-cover bg-center shadow-lg"
+          style={{ backgroundImage: "url('/tu-imagen-de-fondo.jpg')" }} // <--- Cambia esto por tu ruta
+        >
+          {/* Capa oscura para legibilidad */}
+          <div className="absolute inset-0 bg-black/50 -z-10"></div>
+
+          <p className="text-sm font-semibold text-white">Síguenos</p>
           <div className="flex gap-3">
             <a
-              href="#"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center 
-                         hover:bg-white/20 dark:bg-slate-700/40 dark:hover:bg-slate-600/60 transition"
+              href="https://www.facebook.com/colegiolapresentacionsantateresacucuta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center 
+                         hover:bg-white/40 transition backdrop-blur-sm"
             >
-              <FacebookIcon fontSize="small" />
+              <FacebookIcon fontSize="small" className="text-white" />
             </a>
             <a
-              href="#"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center 
-                         hover:bg-white/20 dark:bg-slate-700/40 dark:hover:bg-slate-600/60 transition"
+              href="https://www.instagram.com/colpre.santateresa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center 
+                         hover:bg-white/40 transition backdrop-blur-sm"
             >
-              <InstagramIcon fontSize="small" />
+              <InstagramIcon fontSize="small" className="text-white" />
             </a>
             <a
-              href="#"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center 
-                         hover:bg-white/20 dark:bg-slate-700/40 dark:hover:bg-slate-600/60 transition"
+              href="https://www.youtube.com/@colsantateresacucuta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center 
+                         hover:bg-white/40 transition backdrop-blur-sm"
             >
-              <YouTubeIcon fontSize="small" />
+              <YouTubeIcon fontSize="small" className="text-white" />
             </a>
           </div>
 
-          {/* Dirección en dos líneas */}
-          <div className="mt-3 text-xs leading-4 text-slate-200 dark:text-slate-400">
-            <p className="text-sm font-semibold dark:text-slate-100">Encuéntranos</p>
+          {/* Dirección */}
+          <div className="mt-3 text-xs leading-4 text-slate-100">
+            <p className="text-sm font-semibold">Encuéntranos</p>
             <p>Avenida 2 # 17-51</p>
             <p>Barrio La Playa — Cúcuta</p>
           </div>
@@ -62,8 +74,8 @@ function Footer() {
           />
         </div>
 
-        {/* DERECHA — Espacio vacío (la abeja está posicionada fuera) */}
-        <div></div>
+        {/* DERECHA — Espacio vacío (ajustado para responsive) */}
+        <div className="hidden md:block"></div>
       </div>
 
       <div className="text-center py-4 text-xs text-slate-300 dark:text-slate-500 border-t border-white/10 dark:border-slate-700">
@@ -74,5 +86,3 @@ function Footer() {
 }
 
 export default Footer;
-
-

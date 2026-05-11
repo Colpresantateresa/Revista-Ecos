@@ -7,20 +7,22 @@ export default function Editorial() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
+  // Nota: Se agregó 'font-montserrat' al contenedor principal
   return (
-    <section className="pt-24 pb-20 font-sans px-6 md:px-12 max-w-5xl mx-auto text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 transition-colors duration-500">
+    <section className="pt-24 pb-20 font-montserrat px-6 md:px-12 max-w-5xl mx-auto text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 transition-colors duration-500">
 
       {/* Encabezado tipo revista */}
       <div className="mb-10" data-aos="fade-up">
-        <span className="uppercase tracking-widest text-sm text-blue-700 dark:text-blue-400 font-semibold">
+        <span className="uppercase tracking-widest text-sm text-blue-700 dark:text-blue-400 font-bold">
           Edición N°6 · Año Escolar 2025
         </span>
 
-        <h1 className="text-4xl md:text-6xl font-serif font-bold mt-2 leading-tight text-slate-900 dark:text-white">
+        {/* Cambié font-serif por font-bold para que Montserrat luzca imponente */}
+        <h1 className="text-4xl md:text-6xl font-black mt-2 leading-tight text-slate-900 dark:text-white uppercase">
           Ecos Presentación 2025
         </h1>
 
-        <h2 className="text-lg md:text-xl mt-3 text-slate-600 dark:text-slate-400 italic">
+        <h2 className="text-lg md:text-xl mt-3 text-slate-600 dark:text-slate-400 italic font-medium">
           Una revista que inspira esperanza, creatividad y transformación
         </h2>
 
@@ -35,24 +37,24 @@ export default function Editorial() {
         <img
           src="/images/HnaO.jpg"
           alt="Hna. Omaira del C. Sánchez Ardila - Rectora"
-          className="rounded-xl shadow-lg w-full h-auto object-cover"
+          className="rounded-xl shadow-lg w-full h-auto object-cover border-4 border-slate-50 dark:border-slate-800"
         />
-        <p className="mt-3 text-sm md:text-base font-semibold">
+        <p className="mt-3 text-sm md:text-base font-bold">
           Hna. Omaira del C. Sánchez Ardila
           <br />
-          <span className="font-normal text-slate-600 dark:text-slate-400">
+          <span className="font-light text-slate-600 dark:text-slate-400">
             Rectora
           </span>
         </p>
       </div>
 
       {/* Contenido */}
-      <div className="text-justify leading-relaxed space-y-6">
+      <div className="text-justify leading-relaxed space-y-6 font-medium">
 
         {/* Cita estilo revista */}
-        <blockquote className="border-l-4 border-blue-700 dark:border-blue-400 pl-6 italic text-lg text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 p-4 rounded-r-lg shadow-sm">
+        <blockquote className="border-l-4 border-blue-700 dark:border-blue-400 pl-6 italic text-lg text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 p-6 rounded-r-lg shadow-sm">
           “La esperanza siempre tiene rostro humano, acciones concretas para construir a través de la esperanza, un mundo mejor”.
-          <span className="block text-right text-sm mt-2 font-semibold">
+          <span className="block text-right text-sm mt-2 font-bold not-italic">
             — Papa Francisco
           </span>
         </blockquote>
@@ -62,32 +64,23 @@ export default function Editorial() {
         </p>
 
         <p>
-          Con el entusiasmo que nos caracteriza, queremos aprovechar este momento para llegar a usted, querido lector de nuestra <strong>Revista Institucional</strong>, que en este año escolar 2025 tiene como propósito destacar a los pequeños escritores de la comunidad educativa, resaltando sus habilidades en la producción textual.
+          Con el entusiasmo que nos caracteriza, queremos aprovechar este momento para llegar a usted, querido lector de nuestra <strong className="font-bold text-blue-800 dark:text-blue-300">Revista Institucional</strong>, que en este año escolar 2025 tiene como propósito destacar a los pequeños escritores de la comunidad educativa, resaltando sus habilidades en la producción textual.
         </p>
 
         <p>
-          Nuestra revista digital, en su edición N°6 <strong>“ECOS PRESENTACIÓN”</strong>, busca mantenernos actualizados frente a los avances comunicativos actuales. Este año incorporamos la sección especial <span className="bg-blue-700 text-white px-2 py-1 rounded-md text-sm font-semibold">Zapping</span>, donde se valorarán las producciones orales y la creatividad audiovisual, fomentando la lectura infantil y juvenil a través de mensajes motivadores.
+          Nuestra revista digital, en su edición N°6 <strong className="font-extrabold">“ECOS PRESENTACIÓN”</strong>, busca mantenernos actualizados frente a los avances comunicativos actuales. Este año incorporamos la sección especial <span className="bg-blue-700 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">Zapping</span>, donde se valorarán las producciones orales y la creatividad audiovisual.
         </p>
 
         <p>
           Continuemos escribiendo con palabras sabias la parte de la historia que nos corresponde. Quien lee y escribe hace posible lo imposible, crea mundos y personajes inimaginables y trasciende fronteras a través del poder transformador de las letras.
         </p>
 
-        <p>
-          La sección infantil de la revista es un homenaje a la creatividad, el ingenio y la sensibilidad de nuestros estudiantes. Sus voces cobran vida mediante cuentos, poemas y reflexiones que evidencian imaginación, capacidad de expresión y amor por el aprendizaje.
-        </p>
-
-        <p>
-          Si eres parte de nuestra familia Presentación, estás llamado a asumir el reto, a entrar en este maravilloso mundo y sorprendernos con tu talento, para que juntos hagamos la diferencia y construyamos una nueva mentalidad de vida.
-        </p>
-
         {/* Separador elegante */}
-        <div className="border-t border-slate-300 dark:border-slate-700 pt-6 mt-6">
-          <p className="font-semibold text-lg text-center">
+        <div className="border-t border-slate-300 dark:border-slate-700 pt-8 mt-10">
+          <p className="font-bold text-xl text-center text-blue-900 dark:text-blue-200">
             Con esperanza y compromiso, avancemos juntos hacia un mundo mejor.
           </p>
         </div>
-
       </div>
 
       <div className="clear-both"></div>

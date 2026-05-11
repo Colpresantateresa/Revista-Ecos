@@ -7,3 +7,9 @@ html,body,#root {overflow-x: hidden; }
 body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Opcional: Para que sea la fuente por defecto de todo el sitio sin cambiar clases */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
