@@ -14,7 +14,7 @@ export default function BienvenidaSatmun() {
       {/* Imagen de fondo translúcida y difuminada */}
       <div className="absolute inset-0">
         <img
-          src="/images/ModelUN2.jpg"
+          src="/images/GalSat25/st23.JPG"
           alt="SATMUN fondo"
           className="w-full h-full object-cover opacity-15 dark:opacity-20 blur-sm"
         />
