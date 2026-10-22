@@ -6,11 +6,11 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 function Footer() {
   return (
     <footer 
-      className="relative text-slate-800 dark:text-slate-100 mt-12 transition-colors duration-500 overflow-hidden bg-white-900"
+      className="relative text-slate-800 dark:text-slate-100 mt-12 transition-colors duration-500 overflow-hidden bg-white dark:bg-slate-900"
       style={{
-        backgroundImage: `url('/images/Recurso6.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundImage: `url('/images/Recursos26/Recursofoot.png')`,
+        backgroundSize: '100% 100%',
+        backgroundPosition: 'bottom center',
         backgroundRepeat: 'no-repeat'
       }}
     >
@@ -19,11 +19,11 @@ function Footer() {
         src="/Abeja3.png"
         alt="volver al inicio"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="absolute bottom-16 right-10 w-10 opacity-90 pointer-events-auto cursor-pointer select-none animate-eight
+        className="absolute bottom-16 right-16 w-10 opacity-90 pointer-events-auto cursor-pointer select-none animate-eight
                     transition-transform duration-300 hover:scale-110 hover:-translate-y-1 z-10"
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 py-10 grid grid-cols-3 items-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 grid grid-cols-3 items-center">
 
         {/* IZQUIERDA — Redes + contacto */}
         <div className="flex flex-col items-start gap-2">
@@ -34,7 +34,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-slate-900/10 dark:bg-white/10 flex items-center justify-center text-slate-900 dark:text-white
-                         hover:bg-slate-900/20 dark:hover:bg-white/20 transition shadow-sm"
+                       hover:bg-slate-900/20 dark:hover:bg-white/20 transition shadow-sm"
             >
               <FacebookIcon fontSize="small" />
             </a>
@@ -43,7 +43,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-slate-900/10 dark:bg-white/10 flex items-center justify-center text-slate-900 dark:text-white
-                         hover:bg-slate-900/20 dark:hover:bg-white/20 transition shadow-sm"
+                       hover:bg-slate-900/20 dark:hover:bg-white/20 transition shadow-sm"
             >
               <InstagramIcon fontSize="small" />
             </a>
@@ -52,7 +52,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-slate-900/10 dark:bg-white/10 flex items-center justify-center text-slate-900 dark:text-white
-                         hover:bg-slate-900/20 dark:hover:bg-white/20 transition shadow-sm"
+                       hover:bg-slate-900/20 dark:hover:bg-white/20 transition shadow-sm"
             >
               <YouTubeIcon fontSize="small" />
             </a>

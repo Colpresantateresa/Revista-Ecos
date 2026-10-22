@@ -3,9 +3,8 @@ import Layout from "../layouts/Layout";
 import Editorial from "../components/Editorial";
 import NoticiasRecientes from "../components/Actulidad";
 import ImageSlider from "../components/ImageSlider"; 
-import MenuArticulo from "../components/MenuArticulo";
-import MenuArticuloE from "../components/MenuArticuloE";
-import ArticuloMindfulness from "../components/MInd";
+
+
 
 function Homepage() {
   return (
@@ -21,10 +20,7 @@ function Homepage() {
 
       {/* Sección editorial */}
       <Editorial />
-      <MenuArticulo />
-      <ArticuloMindfulness />
-      <MenuArticuloE />
-
+      
     </Layout>
   );
 }

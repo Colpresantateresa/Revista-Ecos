@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 export default function GridArticulos() {
   const articulos = [
     {
-      titulo: "Cometas: Tradición, Ciencia y Diversión en un Solo Vuelo",
-      img: "/images/Cometa.jpg",
-      link: "/entretenimiento/cometas",
+      titulo: "Saint Valentine’s Day at School",
+      img: "/images/ImaArti/Sv01.jpg",
+      link: "/entretenimiento/valentine", 
     },
     {
-      titulo: "Easter: A Celebration of Life, Faith, and Service",
-      img: "/images/Easter.jpg",
-      link: "/entretenimiento/easter",
+      titulo: "El trabajo, una oportunidad de construir sociedad",
+      img: "/images/ImaArti/DiaT.png",
+      link: "/entretenimiento/trabajo",
     },
   ];
 
