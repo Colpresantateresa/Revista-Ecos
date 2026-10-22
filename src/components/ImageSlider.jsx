@@ -17,8 +17,8 @@ export default function ImageSlider() {
       route: "/infantil",
     },
     {
-      src: "/images/GalSat25/st24.JPG",
-      title: "SATMUN 2025",
+      src: "/images/Recursos26/SatSlider.JPG",
+      title: "SATMUN 2026",
       description: "Visita nuestra Seccion y conoce que es Satmun.",
       route: "/satmun",
     },
