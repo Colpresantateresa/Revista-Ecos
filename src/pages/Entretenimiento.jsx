@@ -13,7 +13,7 @@ export default function Entretenimiento() {
           onClick={() => navigate(-1)}
           className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg shadow transition"
         >
-          <img src="/images/Volver.png" alt="Volver" className="w-6 h-6" />
+          <img src="/images/Recursos26/flechaB.png" alt="Volver" className="w-6 h-6" />
           <span className="font-medium"></span>
         </button>
       </div>  

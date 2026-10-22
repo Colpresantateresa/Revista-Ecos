@@ -14,12 +14,12 @@ import { useTheme } from "../context/ThemeContext";
 
 
 const navLinks = [
-  { name: "Inicio", path: "/", icon: <HomeIcon fontSize="small" className="text-[#E74029]" /> },
-  { name: "Ciencia y Literatura", path: "/ciencia-literatura", icon: <LocalLibraryIcon fontSize="small" className="text-[#FAB81C]" /> },
-  { name: "Cultura y Tecnología", path: "/cultura-tecnologia", icon: <PsychologySharpIcon fontSize="small" className="text-[#2C75BA]" /> },
-  { name: "Infantil", path: "/infantil", icon: <ChildCareSharpIcon fontSize="small" className="text-[#E74029]" /> },
-  { name: "Zapping", path: "/zapping", icon: <ResetTvIcon fontSize="small" className="text-[#FAB81C]" /> },
-  { name: "Entretenimiento", path: "/entretenimiento", icon: <VideogameAssetIcon fontSize="small" className="text-[#2C75BA]" /> },
+  { name: "Inicio", path: "/", icon: <HomeIcon fontSize="small" className="text-[#004952]" /> },
+  { name: "Ciencia y Literatura", path: "/ciencia-literatura", icon: <LocalLibraryIcon fontSize="small" className="text-[#D54C1A]" /> },
+  { name: "Cultura y Tecnología", path: "/cultura-tecnologia", icon: <PsychologySharpIcon fontSize="small" className="text-[#E3A62F]" /> },
+  { name: "Infantil", path: "/infantil", icon: <ChildCareSharpIcon fontSize="small" className="text-[#058688]" /> },
+  { name: "Zapping", path: "/zapping", icon: <ResetTvIcon fontSize="small" className="text-[#E3A62F]" /> },
+  { name: "Entretenimiento", path: "/entretenimiento", icon: <VideogameAssetIcon fontSize="small" className="text-[#D54C1A]" /> },
   { name: "Satmun", path: "/satmun", icon: <LanguageIcon fontSize="small" /> },
 ];
 
@@ -31,7 +31,7 @@ function Navbar() {
     <header 
       className="fixed top-0 left-0 w-full z-50 text-slate-800 dark:text-slate-100 transition-colors duration-500 overflow-hidden shadow-sm"
       style={{
-        backgroundImage: `url('/images/borde.png')`,
+        backgroundImage: `url('/images/Recursos26/Recursofoot.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'bottom center', // Clave: fuerza a mostrar la parte de abajo de la imagen (la franja de colores)
         backgroundRepeat: 'no-repeat'
@@ -42,9 +42,9 @@ function Navbar() {
         {/* LOGO IZQUIERDA */}
         <Link to="/">
           <img
-            src="/images/escoslogo25.png"
+            src="/images/Recursos26/ecos2026.png"
             alt="Logo Revista Ecos"
-            className="w-25 h-16 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90 drop-shadow-sm"
+            className="w-23 h-16 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90 drop-shadow-sm"
           />
         </Link>
 
