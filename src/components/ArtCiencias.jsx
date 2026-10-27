@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ArtCiencias() {
+  const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
     AOS.refresh();
@@ -89,6 +92,18 @@ export default function ArtCiencias() {
         <p className="text-right font-semibold mt-8 text-base">
           Autor: Equipo de Ciencias Naturales
         </p>
+
+        {/* Botón de regreso a Ciencia y Literatura */}
+        <div className="flex justify-center mt-12 mb-6">
+          <button
+            onClick={() => navigate("/ciencia-literatura")}
+            className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg shadow transition duration-200"
+          >
+            <img src="/images/Recursos26/flechaB.png" alt="Volver" className="w-6 h-6" />
+            <span className="font-medium"></span>
+          </button>
+        </div>
+
       </div>
     </article>
   );

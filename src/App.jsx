@@ -9,8 +9,14 @@ import Entretenimiento from "./pages/Entretenimiento";
 import Infantil from "./pages/Infantil";
 import Satmun from "./pages/Satmun";
 import Zapping from "./pages/Zapping";
-import ArticuloCronica from "./components/Articulo";
-import ArticuloDiaTierra from "./components/Articulo2";
+
+// Importación de los artículos de Ciencia y Literatura
+import ArtLengua from "./components/ArtLengua";
+import ArtCiencias from "./components/ArtCiencias";
+import ArtLibroPasado from "./components/ArtLibroPasado";
+import ArtLiteratura from "./components/ArtLiteratura"; // Componente existente para la Tragedia en el Bosque
+
+// Otros artículos y vistas
 import ArticuloCometas from "./components/Articulo4";
 import ArticuloEaster from "./components/Articulo5";
 import OrgulloPresentacion from "./components/EstudiatesDest";
@@ -38,23 +44,41 @@ export default function App() {
         <Route path="/satmun" element={<Satmun />} />
         <Route path="/zapping" element={<Zapping />} />
 
-        {/* Artículos */}
+        {/* Rutas de los 4 artículos de Ciencia y Literatura */}
         <Route
-          path="/ciencia-literatura/cronica"
+          path="/articulos/lengua"
           element={
             <Layout>
-              <ArticuloCronica />
+              <ArtLengua />
             </Layout>
           }
         />
         <Route
-          path="/ciencia-literatura/dia-tierra"
+          path="/articulos/ciencias"
           element={
             <Layout>
-              <ArticuloDiaTierra />
+              <ArtCiencias />
             </Layout>
           }
         />
+        <Route
+          path="/articulos/libro-pasado"
+          element={
+            <Layout>
+              <ArtLibroPasado />
+            </Layout>
+          }
+        />
+        <Route
+          path="/articulos/arllite"
+          element={
+            <Layout>
+              <ArtLiteratura />
+            </Layout>
+          }
+        />
+
+        {/* Otros Artículos */}
         <Route
           path="/entretenimiento/cometas"
           element={
@@ -72,7 +96,7 @@ export default function App() {
           }
         />
 
-        {/* 🆕 Nueva sección */}
+        {/* Orgullo Presentación */}
         <Route
           path="/orgullo-presentacion"
           element={

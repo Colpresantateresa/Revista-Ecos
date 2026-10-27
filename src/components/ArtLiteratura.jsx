@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function ArtLiteratura() {
+  const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
     AOS.refresh();
@@ -77,6 +80,17 @@ export default function ArtLiteratura() {
           Autor: Esteban Alejandro Ordoñez Lopez <br />
           <span className="text-sm font-normal text-slate-600 dark:text-slate-400">Sexto A</span>
         </p>
+
+        {/* Botón de regreso a Ciencia y Literatura */}
+        <div className="flex justify-center mt-12 mb-6">
+          <button
+            onClick={() => navigate("/ciencia-literatura")}
+            className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg shadow transition duration-200"
+          >
+            <img src="/images/Recursos26/flechaB.png" alt="Volver" className="w-6 h-6" />
+            <span className="font-medium"></span>
+          </button>
+        </div>
       </div>
     </div>
   );
