@@ -66,8 +66,8 @@ export default function App() {
           element={<Layout><ArtAcosoEscolar /></Layout>}
         />
         <Route
-          path="/articulos/libro-pasado"
-          element={<Layout><ArtLibroPasado /></Layout>}
+          path="/articulos/lengua"
+          element={<Layout><ArtLengua /></Layout>}
         />
         <Route
           path="/articulos/gobierno-escolar"
