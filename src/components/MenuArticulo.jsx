@@ -10,22 +10,22 @@ export default function MenuArticulo({ titulo = "Ciencia y Literatura", articulo
       link: "/articulos/lengua",
     },
     {
-      titulo: "El Latido de la Tierra: La huella presencial es irremplazable",
-      categoria: "Ciencias Naturales",
-      img: "/images/ImaArti/ArtiCien.jpeg",
-      link: "/articulos/ciencias",
+      titulo: "El acoso escolar, un llamado a la fraternidad",
+      categoria: "Ética y Valores",
+      img: "/images/ImaArti/DNUL.jpg",
+      link: "/articulos/acoso-escolar",
     },
     {
-      titulo: "El Libro del Pasado",
-      categoria: "Relato Literario",
-      img: "/images/ImaArti/LibPas.jpg",
-      link: "/articulos/libro-pasado",
+      titulo: "Gobierno Escolar: una experiencia de liderazgo con corazón",
+      categoria: "Ciencias Sociales",
+      img: "/images/ImaArti/GEPC.JPG",
+      link: "/articulos/gobierno-escolar",
     },
     {
-      titulo: "Tragedia en el Bosque", // <-- Título corregido para que coincida con tu artículo
-      categoria: "Relato Literario",
-      img: "/images/ImaArti/Artlite.jpeg",
-      link: "/articulos/arllite",
+      titulo: "El Latido de la Palabra: la Lengua Materna exige el Encuentro",
+      categoria: "Lengua Materna",
+      img: "/images/ImaArti/DIALM.JPG",
+      link: "/articulos/latido-palabra",
     },
   ];
 

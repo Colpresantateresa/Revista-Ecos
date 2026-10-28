@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
+// ==========================================
+// IMPORTACIÓN DE PÁGINAS PRINCIPALES
+// ==========================================
 import Homepage from "./pages/Homepage";
 import CienciaLiteratura from "./pages/CienciaLiteratura";
 import CulturaTecnologia from "./pages/CulturaTecnologia";
@@ -10,18 +13,26 @@ import Infantil from "./pages/Infantil";
 import Satmun from "./pages/Satmun";
 import Zapping from "./pages/Zapping";
 
-// Importación de los artículos de Ciencia y Literatura
+// ==========================================
+// IMPORTACIÓN DE ARTÍCULOS: CIENCIA Y LITERATURA
+// ==========================================
 import ArtLengua from "./components/ArtLengua";
-import ArtCiencias from "./components/ArtCiencias";
+import ArtAcosoEscolar from "./components/ArtAcosoEscolar";
 import ArtLibroPasado from "./components/ArtLibroPasado";
-import ArtLiteratura from "./components/ArtLiteratura"; // Componente existente para la Tragedia en el Bosque
+import ArtLatidoPalabra from "./components/ArtLatidoPalabra";
+import ArtGobiernoEscolar from "./components/ArtGobiernoEscolar";
 
-// Otros artículos y vistas
+// ==========================================
+// IMPORTACIÓN DE OTROS ARTÍCULOS Y VISTAS
+// ==========================================
 import ArticuloCometas from "./components/Articulo4";
 import ArticuloEaster from "./components/Articulo5";
 import OrgulloPresentacion from "./components/EstudiatesDest";
-import Layout from "./layouts/Layout";
 
+// ==========================================
+// LAYOUT Y LIBRERÍAS GLOBALES
+// ==========================================
+import Layout from "./layouts/Layout";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -35,7 +46,9 @@ export default function App() {
       <ScrollToTop />
 
       <Routes>
-        {/* Páginas principales */}
+        {/* =========================================================
+            1. PÁGINAS PRINCIPALES DE NAVEGACIÓN
+           ========================================================= */}
         <Route path="/" element={<Homepage />} />
         <Route path="/ciencia-literatura" element={<CienciaLiteratura />} />
         <Route path="/cultura-tecnologia" element={<CulturaTecnologia />} />
@@ -44,66 +57,45 @@ export default function App() {
         <Route path="/satmun" element={<Satmun />} />
         <Route path="/zapping" element={<Zapping />} />
 
-        {/* Rutas de los 4 artículos de Ciencia y Literatura */}
+        {/* =========================================================
+            2. ARTÍCULOS DE LA SECCIÓN: CIENCIA Y LITERATURA
+           ========================================================= */}
+        
         <Route
-          path="/articulos/lengua"
-          element={
-            <Layout>
-              <ArtLengua />
-            </Layout>
-          }
-        />
-        <Route
-          path="/articulos/ciencias"
-          element={
-            <Layout>
-              <ArtCiencias />
-            </Layout>
-          }
+          path="/articulos/acoso-escolar"
+          element={<Layout><ArtAcosoEscolar /></Layout>}
         />
         <Route
           path="/articulos/libro-pasado"
-          element={
-            <Layout>
-              <ArtLibroPasado />
-            </Layout>
-          }
+          element={<Layout><ArtLibroPasado /></Layout>}
         />
         <Route
-          path="/articulos/arllite"
-          element={
-            <Layout>
-              <ArtLiteratura />
-            </Layout>
-          }
+          path="/articulos/gobierno-escolar"
+          element={<Layout><ArtGobiernoEscolar /></Layout>}
+        />
+        <Route
+          path="/articulos/latido-palabra"
+          element={<Layout><ArtLatidoPalabra /></Layout>}
         />
 
-        {/* Otros Artículos */}
+        {/* =========================================================
+            3. ARTÍCULOS DE LA SECCIÓN: ENTRETENIMIENTO
+           ========================================================= */}
         <Route
           path="/entretenimiento/cometas"
-          element={
-            <Layout>
-              <ArticuloCometas />
-            </Layout>
-          }
+          element={<Layout><ArticuloCometas /></Layout>}
         />
         <Route
           path="/entretenimiento/easter"
-          element={
-            <Layout>
-              <ArticuloEaster />
-            </Layout>
-          }
+          element={<Layout><ArticuloEaster /></Layout>}
         />
 
-        {/* Orgullo Presentación */}
+        {/* =========================================================
+            4. VISTAS INSTITUCIONALES / OTRAS
+           ========================================================= */}
         <Route
           path="/orgullo-presentacion"
-          element={
-            <Layout>
-              <OrgulloPresentacion />
-            </Layout>
-          }
+          element={<Layout><OrgulloPresentacion /></Layout>}
         />
       </Routes>
     </div>
