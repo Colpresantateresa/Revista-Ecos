@@ -27,65 +27,55 @@ export default function BienvenidaSatmun() {
           <h1 className="text-4xl md:text-5xl font-extrabold text-yellow-600 dark:text-yellow-400 font-serif mb-3">
             SATMUN
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold italic text-gray-900 dark:text-gray-100">
-            “Aprender es descubrir que algo es posible.” – Fritz Perl
+          <h2 className="text-xl md:text-2xl font-semibold italic text-gray-900 dark:text-gray-100 max-w-2xl mx-auto">
+            “Mientras perdemos el tiempo dudando, la vida pasa” — Séneca
           </h2>
         </div>
 
         {/* Cuerpo del artículo */}
         <div
-          className="text-justify text-lg md:text-base leading-relaxed md:columns-2 md:gap-12"
+          className="text-justify text-base md:text-lg leading-relaxed md:columns-2 md:gap-12 space-y-6"
           data-aos="fade-up"
         >
-          <p className="mb-6">
-            En la actualidad, vivimos en un mundo interconectado, donde los
-            límites entre las naciones se desdibujan ante la inmediatez de la
-            información y la globalización de los desafíos. No obstante, en este
-            contexto dinámico, la posibilidad de generar un impacto significativo
-            en nuestra realidad sigue estando en nuestras manos. La juventud no
-            es únicamente testigo de los cambios, sino protagonista activa en la
-            construcción de un futuro más equitativo y sostenible. En este
-            sentido, SATMUN trasciende la noción de un simple modelo de Naciones
-            Unidas; es un foro de liderazgo, pensamiento crítico y diálogo, que
-            nos reta a desarrollar soluciones ante los desafíos permanentes de
-            nuestra era.
-          </p>
-
-          <p className="mb-6">
-            Recuerdo con claridad mi primera participación en este modelo,
-            llegaba nueva a la institución. Pero la emoción era palpable, el
-            nerviosismo inevitable, más allá de cualquier temor, existía la
-            certeza de que tenía algo valioso que aportar al proyecto SATMUN.
-          </p>
-
-          <p className="mb-6">
-            La trascendencia no radica en el título que se ostenta, ni en la
-            relevancia del país representado, sino en la solidez de las ideas y
-            en la capacidad de defenderlas con argumentos válidos.
-          </p>
-
-          <p className="mb-6">
-            Cada delegado, organizador y miembro del equipo contribuye
-            activamente a la creación de un evento único, una experiencia
-            formativa que deja huella para la vida. Para finalizar, los invito a
-            que cada intervención, debate y decisión refleje el compromiso
-            auténtico por más allá de los reconocimientos y distinciones, tengan
-            presente la verdadera trascendencia que se genera y el legado que
-            dejamos en nuestra comunidad.
+          <p>
+            Hace 6 años, por primera vez, fui adentrado gracias a la institución en una nueva aventura, el mundo de la diplomacia, la oratoria y el debate. Conocí, siendo un pequeño infante cursante de sexto grado, el grandioso modelo de las naciones unidas de la institución educativa denominado SATMUN, que, aunque siendo inexperto en el ámbito, traté de dar mi mejor versión en pro de la nación que fui delegado.
           </p>
 
           <p>
-            Bienvenidos a SATMUN XI edición. “Es tu momento. Vívelo al máximo.”
+            Tras 5 años de gran trayectoria por el modelo, puedo concluir que SATMUN es una experiencia muy bonita y que tiene algo muy particular: nos genera emociones en tiempos de automatización, frialdad y avances tecnológicos; nos hace sentir, cualidad que caracteriza al ser humano a diferencia de una máquina. El modelo, sea cual sea nuestro cargo o asignación, nos genera una diversidad de emociones que nos definen como seres vivos: felicidad al lograr lo propuesto, angustia por lo que creemos que puede fallar, incertidumbre y preocupación por lo futuro, y anhelo para que todo se desarrolle como lo planeado.
+          </p>
+
+          <p>
+            Cada uno de nosotros, siendo dependencia, delegado o Junta Directiva, somos y seremos pieza fundamental del gran rompecabezas que compone este hermoso modelo.
+          </p>
+
+          <p>
+            Para los delegados, este es un grato espacio donde podemos hacer valer nuestras opiniones, ampliar nuestros conocimientos, donde la búsqueda de soluciones, el esfuerzo y las ganas de un futuro mejor cobran importancia y quedan plasmados en cada portafolio, papel resolutivo y proyecto de ley.
+          </p>
+
+          <p>
+            Al igual que los delegados, quienes tienen su paso por las dependencias viven una experiencia maravillosa. Prensa y edición son los encargados de dejar en nuestros recuerdos y mostrar al mundo, a través de la pantalla, los bellos momentos que transcurren en nuestro modelo. Crisis es la cuna de la imaginación y la creatividad; cada que entran en acción, son los encargados de generar momentos de presión, sorpresa e intensidad a los delegados, dándole así ese toque de interés a las plenarias. Logística y Staff son quienes, con su amabilidad, colaboración y agilidad, aseguran que el modelo transcurra en un orden y calma dignos de una plenaria que busca un mejor mañana.
+          </p>
+
+          <p>
+            En esta doceava edición les extiendo una gran invitación: disfruten y den lo mejor de sí mismos a fin de que, dejando huella, queden así plasmados en nuestra memoria grandes momentos que, al recordarlos, generen nostalgia y alegría, aportando como jóvenes, líderes del cambio, nuestro granito de arena al mundo.
+          </p>
+
+          <p>
+            Finalmente, quienes dan forma y origen a estos grandes momentos: la Junta Directiva, un equipo de trabajo incansable que, día tras día, con su esfuerzo imparable, piensa en cada detalle del modelo para que, en mejora de sí mismo, SATMUN (Santa Teresa para el Mundo) se convierta en un acontecimiento que perdure en los corazones de todo aquel que lo vive.
           </p>
         </div>
 
         {/* Firma */}
         <div className="text-right mt-12 mr-4 md:mr-10" data-aos="fade-up">
+          <p className="text-sm font-semibold tracking-wide text-gray-500 dark:text-gray-400 mb-1">
+            Con orgullo y gratitud
+          </p>
           <p
-            className="text-3xl italic text-gray-800 dark:text-gray-200"
+            className="text-3xl md:text-4xl italic text-gray-800 dark:text-gray-200"
             style={{ fontFamily: "Brush Script MT, cursive" }}
           >
-            Juliana Urbina Mora
+            Juan Tomás Trujillo Peñaranda
           </p>
         </div>
       </div>

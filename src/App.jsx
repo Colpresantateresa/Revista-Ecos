@@ -23,10 +23,17 @@ import ArtLatidoPalabra from "./components/ArtLatidoPalabra";
 import ArtGobiernoEscolar from "./components/ArtGobiernoEscolar";
 
 // ==========================================
+// IMPORTACIÓN DE ARTÍCULOS: CULTURA Y TECNOLOGÍA
+// ==========================================
+import ArtPresencialidad from "./components/ArtPresencialidad";
+import ArtValentine from "./components/ArtValentine";
+import ArticuloTrabajo from "./components/ArticuloTrabajo";
+import ArtCiencias from "./components/ArtCiencias";
+import ArtConvivenciaEscolar from "./components/ArtConvivenciaEscolar";
+
+// ==========================================
 // IMPORTACIÓN DE OTROS ARTÍCULOS Y VISTAS
 // ==========================================
-import ArticuloCometas from "./components/Articulo4";
-import ArticuloEaster from "./components/Articulo5";
 import OrgulloPresentacion from "./components/EstudiatesDest";
 
 // ==========================================
@@ -60,7 +67,6 @@ export default function App() {
         {/* =========================================================
             2. ARTÍCULOS DE LA SECCIÓN: CIENCIA Y LITERATURA
            ========================================================= */}
-        
         <Route
           path="/articulos/acoso-escolar"
           element={<Layout><ArtAcosoEscolar /></Layout>}
@@ -77,17 +83,33 @@ export default function App() {
           path="/articulos/latido-palabra"
           element={<Layout><ArtLatidoPalabra /></Layout>}
         />
+        <Route
+          path="/articulos/libro-pasado"
+          element={<Layout><ArtLibroPasado /></Layout>}
+        />
 
         {/* =========================================================
-            3. ARTÍCULOS DE LA SECCIÓN: ENTRETENIMIENTO
+            3. ARTÍCULOS DE LA SECCIÓN: CULTURA Y TECNOLOGÍA
            ========================================================= */}
         <Route
-          path="/entretenimiento/cometas"
-          element={<Layout><ArticuloCometas /></Layout>}
+          path="/articulos/presencialidad"
+          element={<Layout><ArtPresencialidad /></Layout>}
         />
         <Route
-          path="/entretenimiento/easter"
-          element={<Layout><ArticuloEaster /></Layout>}
+          path="/articulos/valentine"
+          element={<Layout><ArtValentine /></Layout>}
+        />
+        <Route
+          path="/articulos/trabajo"
+          element={<Layout><ArticuloTrabajo /></Layout>}
+        />
+        <Route
+          path="/articulos/ciencias"
+          element={<Layout><ArtCiencias /></Layout>}
+        />
+        <Route
+          path="/articulos/convivencia-escolar"
+          element={<Layout><ArtConvivenciaEscolar /></Layout>}
         />
 
         {/* =========================================================

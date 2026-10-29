@@ -96,8 +96,8 @@ export default function ArtCiencias() {
         {/* Botón de regreso a Ciencia y Literatura */}
         <div className="flex justify-center mt-12 mb-6">
           <button
-            onClick={() => navigate("/ciencia-literatura")}
-            className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg shadow transition duration-200"
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg shadow transition duration-200 cursor-pointer"
           >
             <img src="/images/Recursos26/flechaB.png" alt="Volver" className="w-6 h-6" />
             <span className="font-medium"></span>

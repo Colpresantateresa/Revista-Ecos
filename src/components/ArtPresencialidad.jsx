@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function ArtPresencialidad() {
+  const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
     AOS.refresh();
@@ -81,6 +84,17 @@ export default function ArtPresencialidad() {
           Autor: Hna. Mónica Andrea Díaz Rodríguez <br />
           <span className="text-sm font-normal text-slate-500">Equipo de Pastoral</span>
         </p>
+      </div>
+
+      {/* Botón de regreso centrado */}
+      <div className="flex justify-center mt-12 mb-6">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg shadow transition duration-200 cursor-pointer"
+        >
+          <img src="/images/Recursos26/flechaB.png" alt="Volver" className="w-6 h-6" />
+          <span className="font-medium"></span>
+        </button>
       </div>
     </article>
   );
