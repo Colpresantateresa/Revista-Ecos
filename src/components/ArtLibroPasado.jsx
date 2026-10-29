@@ -72,18 +72,6 @@ export default function ArtLibroPasado() {
         <p className="text-right font-semibold mt-8 text-base">
           Autor: Steven Jackson
         </p>
-
-        {/* Botón de regreso a Ciencia y Literatura */}
-        <div className="flex justify-center mt-12 mb-6">
-          <button
-            onClick={() => navigate("/ciencia-literatura")}
-            className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg shadow transition duration-200"
-          >
-            <img src="/images/Recursos26/flechaB.png" alt="Volver" className="w-6 h-6" />
-            <span className="font-medium"></span>
-          </button>
-        </div>
-
       </div>
     </article>
   );
