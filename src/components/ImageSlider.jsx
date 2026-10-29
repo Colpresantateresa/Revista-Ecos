@@ -11,22 +11,28 @@ export default function ImageSlider() {
 
   const slides = [
     {
-      src: "/images/Exploradores.jpg",
-      title: "Exploradores Infantiles",
-      description: "Descubre las aventuras y proyectos de nuestros pequeños exploradores.",
-      route: "/infantil",
-    },
-    {
       src: "/images/Recursos26/SatSlider.JPG",
       title: "SATMUN 2026",
-      description: "Visita nuestra Seccion y conoce que es Satmun.",
+      description: "Visita nuestra sección y conoce qué es SATMUN y su impacto en el liderazgo juvenil.",
       route: "/satmun",
     },
     {
-      src: "/images/Tierra1.jpeg",
-      title: "Día de la Tierra: Un compromiso por el futuro del planeta",
-      description: "Lee el artículo especial de la sección de literatura y ciencia.",
-      route: "/ciencia-literatura/dia-tierra",
+      src: "public/images/ImaArti/DLCP.JPG",
+      title: "Del Cuaderno a la Pantalla",
+      description: "Descubre cómo usar la Inteligencia Artificial para estudiar mejor y sin trampas.",
+      route: "/articulos/del-cuaderno-a-la-pantalla",
+    },
+    {
+      src: "/images/ImaArti/DIALM.JPG",
+      title: "El Latido de la Palabra",
+      description: "La Lengua Materna exige el encuentro y la expresión viva de nuestras raíces.",
+      route: "/articulos/latido-palabra",
+    },
+    {
+      src: "/images/ImaArti/DIACE.JPG",
+      title: "Día de la Convivencia Escolar",
+      description: "Un espacio fundamental para fortalecer la armonía, el respeto y la fraternidad.",
+      route: "/articulos/convivencia-escolar",
     },
   ];
 
@@ -38,7 +44,7 @@ export default function ImageSlider() {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 4500 }}
+        autoplay={{ delay: 5000 }}
         loop={true}
         className="rounded-2xl"
       >
@@ -62,7 +68,7 @@ export default function ImageSlider() {
                            group-hover:from-black/80 group-hover:via-black/60"
               >
                 <div className="p-4 sm:p-6 text-white transition-transform duration-500 group-hover:translate-y-[-3px]">
-                  <h3 className="text-xl sm:text-2xl font-bold drop-shadow-md group-hover:text-cyan-300">
+                  <h3 className="text-xl sm:text-2xl font-bold drop-shadow-md group-hover:text-teal-300">
                     {slide.title}
                   </h3>
                   <p className="text-sm sm:text-base text-gray-200">
