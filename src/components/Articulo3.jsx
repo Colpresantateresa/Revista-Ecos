@@ -5,15 +5,16 @@ import 'aos/dist/aos.css';
 
 export default function ArticuloRevistaPreescolar() {
   const navigate = useNavigate();
- useEffect(() => {
+  
+  useEffect(() => {
     AOS.init({ duration: 1000, once: true });
-    AOS.refresh(); // refresca AOS para detectar nuevos elementos
+    AOS.refresh();
   }, []);
   
   const secciones = [
     {
       titulo: "Exploradores de la Creación",
-      imagen: "/images/Exploradores.jpg",
+      imagen: "/images/ImaArti/Exploradores.jpg",
       posicion: "right",
       tamano: "medium",
       parrafos: [
@@ -24,18 +25,18 @@ export default function ArticuloRevistaPreescolar() {
     },
     {
       titulo: "Arte con el corazón: descubriendo a Papito Dios en lo pequeño",
-      imagen: "/images/ArteCorazon.jpg",
+      imagen: "/images/ImaArti/ArteCorazon.jpg",
       posicion: "left",
       tamano: "large",
       parrafos: [
         "Hoy nuestros pequeños artistas salieron al jardín con ojos de asombro y alma de poetas. En cada paso, fuimos reconociendo que la naturaleza es una carta de amor escrita por Papito Dios. Nos detuvimos a observar con calma, a tocar con cuidado, y a recoger con cariño hojas y flores que ya habían caído al suelo.",
         "En cada pétalo seco y en cada hoja dorada, descubrimos que las cosas pequeñas también encierran una belleza inmensa. Aprendimos que Dios se manifiesta en los detalles, en lo simple, en lo que a veces pasa desapercibido, pero que, al mirarlo con el corazón, se convierte en un tesoro.",
-        "Con todo lo recolectado, creamos una obra de arte que no solo decoran, sino que narra una historia: la historia de niños que, con amor, se sorprenden al ver la huella de su Creador en cada rincón del jardín.",
+        "Con todo lo recolectado, creamos una obra de arte que no solo decora, sino que narra una historia: la historia de niños que, con amor, se sorprenden al ver la huella de su Creador en cada rincón del jardín.",
       ],
     },
     {
-      titulo: "Manos que crean con amor, colores que hablan de Dios",
-      imagen: "/images/ManosCrea.jpg",
+      titulo: "Manos que crean com amor, colores que hablan de Dios",
+      imagen: "/images/ImaArti/ManosCrea.jpg",
       posicion: "right",
       tamano: "large",
       parrafos: [
@@ -46,7 +47,7 @@ export default function ArticuloRevistaPreescolar() {
     },
     {
       titulo: "Haciendo manualidades bonitas",
-      imagen: "/images/Manualidades.png",
+      imagen: "/images/ImaArti/Manualidades.png",
       posicion: "left",
       tamano: "small",
       parrafos: [
@@ -57,7 +58,7 @@ export default function ArticuloRevistaPreescolar() {
     },
     {
       titulo: "Escribiendo mi historia escolar",
-      imagen: "/images/HistoriaEscolar.jpg",
+      imagen: "/images/ImaArti/HistoriaEscolar.jpg",
       posicion: "center",
       tamano: "large",
       parrafos: [
@@ -67,7 +68,7 @@ export default function ArticuloRevistaPreescolar() {
     },
     {
       titulo: "Celebración del Día de la Mujer en Preescolar",
-      imagen: "/images/DiaMujer.jpg",
+      imagen: "/images/ImaArti/DiaMujer.jpg",
       posicion: "left",
       tamano: "small",
       parrafos: [
@@ -77,7 +78,7 @@ export default function ArticuloRevistaPreescolar() {
     },
     {
       titulo: "Mi nombre, mi historia",
-      imagen: "/images/MiNombre.png",
+      imagen: "/images/ImaArti/MiNombre.png",
       posicion: "right",
       tamano: "medium",
       parrafos: [
@@ -88,7 +89,7 @@ export default function ArticuloRevistaPreescolar() {
     },
     {
       titulo: "Descubriendo los números del 0 al 5",
-      imagen: "/images/Numeros.jpeg",
+      imagen: "/images/ImaArti/Numeros.jpeg",
       posicion: "left",
       tamano: "small",
       parrafos: [
@@ -98,7 +99,7 @@ export default function ArticuloRevistaPreescolar() {
     },
     {
       titulo: "Nuestra familia es nuestra casa",
-      imagen: "/images/FamiliaCasa.jpg",
+      imagen: "/images/ImaArti/FamiliaCasa.jpg",
       posicion: "left",
       tamano: "large",
       parrafos: [
@@ -108,7 +109,7 @@ export default function ArticuloRevistaPreescolar() {
     },
     {
       titulo: "Coloreando los días de la semana",
-      imagen: "/images/DiasSemana.jpg",
+      imagen: "/images/ImaArti/DiasSemana.jpg",
       posicion: "right",
       tamano: "medium",
       parrafos: [
@@ -119,7 +120,7 @@ export default function ArticuloRevistaPreescolar() {
   ];
 
   const getImageClasses = (posicion, tamano) => {
-    const base = "rounded-lg shadow mb-4 object-cover";
+    const base = "rounded-xl shadow-md mb-4 object-cover border border-slate-100 dark:border-slate-800";
     const tamanos = {
       small: "w-full md:w-1/3",
       medium: "w-full md:w-1/2",
@@ -135,25 +136,28 @@ export default function ArticuloRevistaPreescolar() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10 text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 transition-colors duration-300">
-      <h1 className="text-3xl font-bold text-center mb-10 text-gray-800 text-2xl font-bold mb-6 text-center text-slate-900 dark:text-slate-100 ">
-        NUESTRAS PEQUEÑAS HISTORIAS
+    <article className="max-w-3xl mx-auto px-4 py-12 text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 transition-colors duration-300">
+      
+      {/* TÍTULO PRINCIPAL */}
+      <h1 className="text-3xl sm:text-4xl font-black text-center mb-12 text-slate-900 dark:text-slate-100 uppercase tracking-wide">
+        Nuestras Pequeñas Historias
       </h1>
 
       {secciones.map((sec, index) => (
         <div key={index} className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-center text-slate-900 dark:text-slate-100">
+          <h2 className="text-2xl font-bold mb-6 text-center text-slate-900 dark:text-slate-100">
             {sec.titulo}
           </h2>
           <img
             src={sec.imagen}
             alt={sec.titulo}
-            className={getImageClasses(sec.posicion, sec.tamano)} data-aos="fade-right"
+            className={getImageClasses(sec.posicion, sec.tamano)}
+            data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           />
           {sec.parrafos.map((p, i) => (
-            <p key={i} className="text-justify leading-relaxed mb-4 text-slate-700 dark:text-slate-300" >
+            <p key={i} className="text-justify leading-relaxed mb-4 text-slate-700 dark:text-slate-300 text-lg">
               {p}
             </p>
           ))}
@@ -161,20 +165,21 @@ export default function ArticuloRevistaPreescolar() {
         </div>
       ))}
 
-      <p className="text-right font-semibold mt-6">
+      <p className="text-right font-semibold mt-8 text-base text-[#058688]">
         Autor: Equipo de Preescolar
       </p>
 
-      <div className="flex justify-center mt-8">
+      {/* Botón de regreso centrado */}
+      <div className="flex justify-center mt-12 mb-6">
         <button
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg shadow transition"
+          className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg shadow transition duration-200 cursor-pointer"
         >
-          <img src="/images/Volver.png" alt="Inicio" className="w-6 h-6" />
+          <img src="/images/Recursos26/flechaB.png" alt="Volver al inicio" className="w-6 h-6" />
           <span className="font-medium"></span>
         </button>
       </div>
-    </div>
+    </article>
   );
 }
 

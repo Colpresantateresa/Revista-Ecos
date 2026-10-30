@@ -14,12 +14,12 @@ function Homepage() {
         <ImageSlider />
       </div>
 
-      {/* Sección de noticias */}
-      <NoticiasRecientes />
-      
-
       {/* Sección editorial */}
       <Editorial />
+
+
+      {/* Sección de noticias */}
+      <NoticiasRecientes />
       
     </Layout>
   );

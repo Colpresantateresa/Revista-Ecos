@@ -32,11 +32,6 @@ import ArtCiencias from "./components/ArtCiencias";
 import ArtConvivenciaEscolar from "./components/ArtConvivenciaEscolar";
 
 // ==========================================
-// IMPORTACIÓN DE OTROS ARTÍCULOS Y VISTAS
-// ==========================================
-import OrgulloPresentacion from "./components/EstudiatesDest";
-
-// ==========================================
 // LAYOUT Y LIBRERÍAS GLOBALES
 // ==========================================
 import Layout from "./layouts/Layout";
@@ -110,14 +105,6 @@ export default function App() {
         <Route
           path="/articulos/convivencia-escolar"
           element={<Layout><ArtConvivenciaEscolar /></Layout>}
-        />
-
-        {/* =========================================================
-            4. VISTAS INSTITUCIONALES / OTRAS
-           ========================================================= */}
-        <Route
-          path="/orgullo-presentacion"
-          element={<Layout><OrgulloPresentacion /></Layout>}
         />
       </Routes>
     </div>

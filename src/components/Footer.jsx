@@ -20,7 +20,7 @@ function Footer() {
         alt="volver al inicio"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="absolute bottom-16 right-16 w-10 opacity-90 pointer-events-auto cursor-pointer select-none animate-eight
-                    transition-transform duration-300 hover:scale-110 hover:-translate-y-1 z-10"
+                   transition-transform duration-300 hover:scale-110 hover:-translate-y-1 z-10"
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 grid grid-cols-3 items-center">
@@ -79,7 +79,7 @@ function Footer() {
         <div></div>
       </div>
 
-      <div className="relative z-10 text-center py-4 text-xs font-medium text-slate-800 dark:text-slate-400 border-t border-slate-900/10 dark:border-slate-700/50 drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
+      <div className="relative z-10 text-center py-4 text-xs font-medium text-slate-800 dark:text-slate-400 drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
         © {new Date().getFullYear()} Área de Comunicaciones · Colegio Presentación Santa Teresa Cúcuta
       </div>
     </footer>
