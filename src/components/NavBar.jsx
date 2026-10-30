@@ -12,7 +12,6 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { useTheme } from "../context/ThemeContext";
 
-
 const navLinks = [
   { name: "Inicio", path: "/", icon: <HomeIcon fontSize="small" className="text-[#004952]" /> },
   { name: "Ciencia y Literatura", path: "/ciencia-literatura", icon: <LocalLibraryIcon fontSize="small" className="text-[#D54C1A]" /> },
@@ -29,11 +28,11 @@ function Navbar() {
 
   return (
     <header 
-      className="fixed top-0 left-0 w-full z-50 text-slate-800 dark:text-slate-100 transition-colors duration-500 overflow-hidden shadow-sm"
+      className="fixed top-0 left-0 w-full z-50 text-slate-800 dark:text-slate-100 transition-colors duration-500 overflow-visible shadow-sm"
       style={{
         backgroundImage: `url('/images/Recursos26/Recursofoot.png')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'bottom center', // Clave: fuerza a mostrar la parte de abajo de la imagen (la franja de colores)
+        backgroundPosition: 'bottom center',
         backgroundRepeat: 'no-repeat'
       }}
     >
@@ -54,17 +53,18 @@ function Navbar() {
             <Link
               key={l.name}
               to={l.path}
-              className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-200"
+              className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-[#058688] dark:hover:text-teal-400 transition duration-200"
             >
               {l.icon}
               {l.name}
             </Link>
           ))}
 
-          {/* ✅ ICONO DARK MODE */}
+          {/* ICONO DARK MODE */}
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded transition"
+            className="p-2 rounded transition cursor-pointer"
+            aria-label="Cambiar modo oscuro"
           >
             {dark ? (
               <LightModeIcon fontSize="small" style={{ color: "#facc15" }} />
@@ -74,7 +74,7 @@ function Navbar() {
           </button>
         </nav>
 
-        {/* LOGO DERECHO + MENU MOBILE */}
+        {/* LOGO DERECHO + MENU MOBILE TOGGLE */}
         <div className="flex items-center gap-3">
           <a
             href="https://colpresantateresacucuta.edu.co/"
@@ -88,50 +88,53 @@ function Navbar() {
             />
           </a>
 
+          {/* Botón hamburguesa */}
           <button
-            className="md:hidden p-2 rounded-lg bg-white/80 dark:bg-slate-800/80 border dark:border-slate-700 text-slate-800 dark:text-white"
-            onClick={() => setMenuOpen(true)}
+            className="md:hidden p-2 rounded-lg bg-white/80 dark:bg-slate-800/80 border dark:border-slate-700 text-slate-800 dark:text-white focus:outline-none cursor-pointer"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menú de navegación"
           >
-            ☰
+            {menuOpen ? "✕" : "☰"}
           </button>
         </div>
       </div>
 
-      {/* MENU MOBILE */}
+      {/* MENU MOBILE DESPLEGABLE */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-white/95 dark:bg-slate-900/95 shadow-md border-b dark:border-slate-800 z-40 p-6 backdrop-blur-md transition-colors duration-500">
 
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute right-4 top-4 text-xl text-slate-700 dark:text-slate-300"
+            className="absolute right-4 top-4 text-xl text-slate-700 dark:text-slate-300 cursor-pointer"
+            aria-label="Cerrar menú"
           >
             ✕
           </button>
 
-          <div className="flex flex-col gap-4 mt-4">
+          <div className="flex flex-col gap-4 mt-2">
             {navLinks.map((l) => (
               <Link
                 key={l.name}
                 to={l.path}
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-cyan-600 transition duration-200"
+                className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-[#058688] dark:hover:text-teal-400 transition duration-200 py-1"
               >
                 {l.icon}
                 {l.name}
               </Link>
             ))}
 
-            {/*ICONO DARK MODE EN MOBILE */}
+            {/* ICONO DARK MODE EN MOBILE */}
             <button
               onClick={() => { toggleDarkMode(); setMenuOpen(false); }}
-              className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-cyan-600 transition p-2"
+              className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-[#058688] dark:hover:text-teal-400 transition p-2 border-t dark:border-slate-800 mt-2 pt-3 cursor-pointer"
             >
               {dark ? (
                 <LightModeIcon fontSize="small" style={{ color: "#facc15" }} />
               ) : (
                 <DarkModeIcon fontSize="small" style={{ color: "#0ea5e9" }} />
               )}
-              Tema
+              Cambiar Tema ({dark ? "Oscuro" : "Claro"})
             </button>
           </div>
         </div>
