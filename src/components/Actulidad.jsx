@@ -34,7 +34,7 @@ function FestivalYAloeArteSecciones() {
           data-aos="fade-left"
         >
           <img
-            src="public/images/ImaArti/Abedor.JPG"
+            src="images/ImaArti/Abedor.JPG"
             alt="Festival La Abeja Dorada 2026"
             className="w-full h-80 md:h-96 object-cover"
           />
@@ -51,7 +51,7 @@ function FestivalYAloeArteSecciones() {
           data-aos="fade-right"
         >
           <img
-            src="public/images/ImaArti/SalArt.JPG"
+            src="/images/ImaArti/SalArt.JPG"
             alt="Salón de Arte Abeja Dorada 2026"
             className="w-full h-80 md:h-96 object-cover"
           />
