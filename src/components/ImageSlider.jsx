@@ -17,7 +17,7 @@ export default function ImageSlider() {
       route: "/satmun",
     },
     {
-      src: "/images/ImaArti/DLCP.JPG",
+      src: "/images/ImaArti/DLCP.jpg",
       title: "Del Cuaderno a la Pantalla",
       description: "Descubre cómo usar la Inteligencia Artificial para estudiar mejor y sin trampas.",
       route: "/articulos/del-cuaderno-a-la-pantalla",

@@ -28,7 +28,7 @@ export default function ArtDelCuadernoALaPantalla() {
       {/* IMAGEN DE APERTURA (BANNER EDITORIAL) */}
       <div className="mb-8" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <img
-          src="/images/ImaArti/DLCP.JPG" 
+          src="/images/ImaArti/DLCP.jpg" 
           alt="Del Cuaderno a la Pantalla - Inteligencia Artificial y Estudiantes"
           className="w-full h-72 sm:h-96 object-cover rounded-xl shadow-lg border border-slate-200 dark:border-slate-800"
         />
